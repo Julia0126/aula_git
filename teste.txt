@@ -1,1 +1,274 @@
-teste
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Desktop (dev)
+$ cd
+
+Julia@DESKTOP-85UVTLH MINGW64 ~ (dev)
+$ cd Documents/
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents (dev)
+$ cd ..
+
+Julia@DESKTOP-85UVTLH MINGW64 ~ (dev)
+$ mkdir aula_git
+
+Julia@DESKTOP-85UVTLH MINGW64 ~ (dev)
+$ cd Documents/
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents (dev)
+$ mkdir aula_git
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents (dev)
+$ dir
+Generation       Minhas\ Músicas  workspace-spring-tool-suite-4-4.22.1.RELEASE
+Meus\ Vídeos     aula_git
+Minhas\ Imagens  desktop.ini
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents (dev)
+$ cd aula_git/
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (dev)
+$ git init
+Initialized empty Git repository in C:/Users/Julia/Documents/aula_git/.git/
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ ls -a
+./  ../  .git/
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ code .
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        java.txt
+        mysql.txt
+        portugol.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git commit -m "Nosso primeiro Commit"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        java.txt
+        mysql.txt
+        portugol.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git add java.txt
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   java.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mysql.txt
+        portugol.txt
+
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git add .
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   java.txt
+        new file:   mysql.txt
+        new file:   portugol.txt
+
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git commit -m "segundo commit"
+[main (root-commit) 4069457] segundo commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 java.txt
+ create mode 100644 mysql.txt
+ create mode 100644 portugol.txt
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git remote add origin https://github.com/Julia0126/aula_git.git
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git remote
+origin
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Julia0126/aula_git.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ ^C
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git add .
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git commit -m "commit terceiro"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git push
+Everything up-to-date
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        teste.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git add .
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   teste.txt
+
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   teste.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   teste.txt
+
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   teste.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   java.txt
+        modified:   teste.txt
+
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git add .
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git add .
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   java.txt
+        new file:   teste.txt
+
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git commit -m "Quarto commit"
+[main 6c81d3b] Quarto commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 teste.txt
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 336 bytes | 336.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Julia0126/aula_git.git
+   4069457..6c81d3b  main -> main
+
+Julia@DESKTOP-85UVTLH MINGW64 ~/Documents/aula_git (main)
+$
